@@ -21,5 +21,33 @@
         background-color: $value;
     }
 
+
+    //light variations
+
+    @for $i from 1 through 9 {
+        .text-#{$key}-light-#{$i}{
+            color:mix(White , $value , $i * 10%);
+        }
+
+    .bg-#{$key}-light-#{$i}{
+        background-color:mix(white,$value,$i * 10%);
+
+    }
+    }
+    
+
+
+    @for $i from 1 through 9 {
+        .text-#{$key}-dark-#{$i}{
+    
+        }
+
+    .bg-#{$key}-dark-#{$i}{
+        background-color:mix(rgb(448, 48, 48) , $value,$i *10%);
+  
+    }
+
+    @debug "<span class='bg-#{$key}-light-#{$i} text-black'>text-#{$key}-light-#{$i}</span>";
+    }
     
 }
