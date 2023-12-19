@@ -1,0 +1,47 @@
+// theme colors
+$primary: #3299ef;
+$secondary: #ececec;
+$error: #d32752;
+$warning: #f7b84b;
+$success: #1ac888;
+$info: #f6c31c;
+
+//color palatte  $color.primary $color.secondary
+$colors:(
+  "primary": $primary,
+  "secondary": $secondary,
+  "error": $error,
+  "info": $info,
+  "blue": #3299ef,
+  "yellow": #f6c31c,
+  "green": #1ac888,
+  "orange": #f7b84b,
+  "purple": #8c54ff,
+  "gray": #f5f5f5,
+  "white": #ffffff,
+  "black": #000000,
+);
+
+.btn-save{
+    background-color:map-get($map:$colors , $key: "blue")
+}
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 10px;
+
+// box/shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+//fonts
+$base-font-size: 1.5rem;
+
+$font-size-sm: $base-font-size * 0.75;
+$font-size-md: $base-font-size * 1.25;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xll: $base-font-size * 3;

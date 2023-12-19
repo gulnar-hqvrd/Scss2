@@ -1,0 +1,25 @@
+//light
+//.text-light-$key
+//.bg-light-$key
+
+
+
+
+//dark
+
+//.text-$key
+//.bg-$key
+
+@each $key,$value in $colors{
+    @debug "key:#{$key} , value:#{$value}";
+    .text-#{$key}{
+        color: $value;
+    }
+
+
+    .bg-#{$key}{
+        background-color: $value;
+    }
+
+    
+}

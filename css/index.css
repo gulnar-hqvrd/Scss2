@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.btn-save {
+  background-color: #3299ef;
+}
+
+/* reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.text-primary {
+  color: #3299ef;
+}
+
+.bg-primary {
+  background-color: #3299ef;
+}
+
+.text-secondary {
+  color: #ececec;
+}
+
+.bg-secondary {
+  background-color: #ececec;
+}
+
+.text-error {
+  color: #d32752;
+}
+
+.bg-error {
+  background-color: #d32752;
+}
+
+.text-info {
+  color: #f6c31c;
+}
+
+.bg-info {
+  background-color: #f6c31c;
+}
+
+.text-blue {
+  color: #3299ef;
+}
+
+.bg-blue {
+  background-color: #3299ef;
+}
+
+.text-yellow {
+  color: #f6c31c;
+}
+
+.bg-yellow {
+  background-color: #f6c31c;
+}
+
+.text-green {
+  color: #1ac888;
+}
+
+.bg-green {
+  background-color: #1ac888;
+}
+
+.text-orange {
+  color: #f7b84b;
+}
+
+.bg-orange {
+  background-color: #f7b84b;
+}
+
+.text-purple {
+  color: #8c54ff;
+}
+
+.bg-purple {
+  background-color: #8c54ff;
+}
+
+.text-gray {
+  color: #f5f5f5;
+}
+
+.bg-gray {
+  background-color: #f5f5f5;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 2.5px;
+}
+.card .card-title {
+  font-size: 2.25rem;
+  padding-bottom: 0.75rem;
+  font-weight: bold;
+}
+.card .card-body {
+  font-size: 1.5rem;
+}
+.card .card-body a {
+  text-decoration: none;
+}
