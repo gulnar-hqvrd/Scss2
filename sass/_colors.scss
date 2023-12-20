@@ -38,9 +38,9 @@
 
 
     @for $i from 1 through 9 {
-        .text-#{$key}-dark-#{$i}{
+        // .text-#{$key}-dark-#{$i}{
     
-        }
+        // }
 
     .bg-#{$key}-dark-#{$i}{
         background-color:mix(rgb(448, 48, 48) , $value,$i *10%);

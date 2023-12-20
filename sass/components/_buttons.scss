@@ -1,37 +1,43 @@
+@mixin btn($bg-color: #fff, $color: white, $border: 0) {
+  background-color: $bg-color;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: $border;
+  padding: $base-padding $base-padding * 2;
+  border-radius: $base-border-radius;
+  color: $color;
+}
+
 @each $key, $value in $colors {
-    @if ($key != "white") {
-      .btn-#{$key}   // .btn-primary
-      {
+  @if ($value != "white") {
+    .btn-#{$key}   // .btn-primary
+    {
+      @include btn(
+        $bg-color: $value,
+        $color: map-get($map: $btn-hover-colors, $key: $key)
+      );
+    }
+
+    .btn-outline-#{$key} {
+      @include btn(
+        $border: $base-border-thickness solid $value,
+        $color: $value
+      );
+      &:hover {
+        color: map-get($map: $btn-hover-colors, $key: $key);
         background-color: $value;
-        text-decoration: none;
-        cursor: pointer;
-        display: inline-block;
-        border: 0;
-        padding: $base-padding $base-padding * 2;
-        border-radius: $base-border-radius;
-        color: map-get($map:$btn-hover-colors, $key: $key);
-
       }
-  
-      .btn-outline-#{$key} {
-        background-color: #fff;
-        text-decoration: none;
-        color: $value;
-        cursor: pointer;
-        display: inline-block;
-        border: $base-border-thickness solid $value;
-        padding: $base-padding $base-padding * 2;
-        border-radius: $base-border-radius;
-  
-        &:hover {
-          color: map-get($map: $btn-hover-colors, $key: $key);
-          background-color: $value;
-        }
 
-        
+      &::after {
+        content: "btn-outline-" +
+          unquote(
+            "#{$key}"
+          ); // metinsel bir değer içerisine değişkendeki değeri eklemek için unquote kullanılır.
       }
     }
-    //   @debug "<button class='btn-#{$key}'>Button</button>";
-  
-    //   @debug "<button class='btn-outline-#{$key}'>#{$key}</button>";
   }
+  //   @debug "<button class='btn-#{$key}'>Button</button>";
+
+  //   @debug "<button class='btn-outline-#{$key}'>#{$key}</button>";
+}

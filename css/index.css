@@ -1445,16 +1445,19 @@ body {
 .btn-outline-primary {
   background-color: #fff;
   text-decoration: none;
-  color: #3299ef;
   cursor: pointer;
   display: inline-block;
   border: 1px solid #3299ef;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: #3299ef;
 }
 .btn-outline-primary:hover {
   color: white;
   background-color: #3299ef;
+}
+.btn-outline-primary::after {
+  content: "btn-outline-primary";
 }
 
 .btn-secondary {
@@ -1471,16 +1474,19 @@ body {
 .btn-outline-secondary {
   background-color: #fff;
   text-decoration: none;
-  color: #ececec;
   cursor: pointer;
   display: inline-block;
   border: 1px solid #ececec;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: #ececec;
 }
 .btn-outline-secondary:hover {
   color: white;
   background-color: #ececec;
+}
+.btn-outline-secondary::after {
+  content: "btn-outline-secondary";
 }
 
 .btn-error {
@@ -1497,16 +1503,19 @@ body {
 .btn-outline-error {
   background-color: #fff;
   text-decoration: none;
-  color: #d32752;
   cursor: pointer;
   display: inline-block;
   border: 1px solid #d32752;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: #d32752;
 }
 .btn-outline-error:hover {
   color: white;
   background-color: #d32752;
+}
+.btn-outline-error::after {
+  content: "btn-outline-error";
 }
 
 .btn-info {
@@ -1523,16 +1532,19 @@ body {
 .btn-outline-info {
   background-color: #fff;
   text-decoration: none;
-  color: #f6c31c;
   cursor: pointer;
   display: inline-block;
   border: 1px solid #f6c31c;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: #f6c31c;
 }
 .btn-outline-info:hover {
   color: black;
   background-color: #f6c31c;
+}
+.btn-outline-info::after {
+  content: "btn-outline-info";
 }
 
 .btn-blue {
@@ -1549,16 +1561,19 @@ body {
 .btn-outline-blue {
   background-color: #fff;
   text-decoration: none;
-  color: #3299ef;
   cursor: pointer;
   display: inline-block;
   border: 1px solid #3299ef;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: #3299ef;
 }
 .btn-outline-blue:hover {
   color: white;
   background-color: #3299ef;
+}
+.btn-outline-blue::after {
+  content: "btn-outline-blue";
 }
 
 .btn-yellow {
@@ -1575,16 +1590,19 @@ body {
 .btn-outline-yellow {
   background-color: #fff;
   text-decoration: none;
-  color: #f6c31c;
   cursor: pointer;
   display: inline-block;
   border: 1px solid #f6c31c;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: #f6c31c;
 }
 .btn-outline-yellow:hover {
   color: white;
   background-color: #f6c31c;
+}
+.btn-outline-yellow::after {
+  content: "btn-outline-yellow";
 }
 
 .btn-green {
@@ -1601,16 +1619,19 @@ body {
 .btn-outline-green {
   background-color: #fff;
   text-decoration: none;
-  color: #1ac888;
   cursor: pointer;
   display: inline-block;
   border: 1px solid #1ac888;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: #1ac888;
 }
 .btn-outline-green:hover {
   color: white;
   background-color: #1ac888;
+}
+.btn-outline-green::after {
+  content: "btn-outline-green";
 }
 
 .btn-orange {
@@ -1627,16 +1648,19 @@ body {
 .btn-outline-orange {
   background-color: #fff;
   text-decoration: none;
-  color: #f7b84b;
   cursor: pointer;
   display: inline-block;
   border: 1px solid #f7b84b;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: #f7b84b;
 }
 .btn-outline-orange:hover {
   color: white;
   background-color: #f7b84b;
+}
+.btn-outline-orange::after {
+  content: "btn-outline-orange";
 }
 
 .btn-purple {
@@ -1653,16 +1677,19 @@ body {
 .btn-outline-purple {
   background-color: #fff;
   text-decoration: none;
-  color: #8c54ff;
   cursor: pointer;
   display: inline-block;
   border: 1px solid #8c54ff;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: #8c54ff;
 }
 .btn-outline-purple:hover {
   color: white;
   background-color: #8c54ff;
+}
+.btn-outline-purple::after {
+  content: "btn-outline-purple";
 }
 
 .btn-gray {
@@ -1679,16 +1706,48 @@ body {
 .btn-outline-gray {
   background-color: #fff;
   text-decoration: none;
-  color: #f5f5f5;
   cursor: pointer;
   display: inline-block;
   border: 1px solid #f5f5f5;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: #f5f5f5;
 }
 .btn-outline-gray:hover {
   color: white;
   background-color: #f5f5f5;
+}
+.btn-outline-gray::after {
+  content: "btn-outline-gray";
+}
+
+.btn-white {
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.btn-outline-white {
+  background-color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  color: white;
+}
+.btn-outline-white:hover {
+  color: white;
+  background-color: white;
+}
+.btn-outline-white::after {
+  content: "btn-outline-white";
 }
 
 .btn-black {
@@ -1705,14 +1764,17 @@ body {
 .btn-outline-black {
   background-color: #fff;
   text-decoration: none;
-  color: black;
   cursor: pointer;
   display: inline-block;
   border: 1px solid black;
   padding: 0.75rem 1.5rem;
   border-radius: 10px;
+  color: black;
 }
 .btn-outline-black:hover {
   color: white;
   background-color: black;
+}
+.btn-outline-black::after {
+  content: "btn-outline-black";
 }
