@@ -1,0 +1,37 @@
+@each $key, $value in $colors {
+    @if ($key != "white") {
+      .btn-#{$key}   // .btn-primary
+      {
+        background-color: $value;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        border: 0;
+        padding: $base-padding $base-padding * 2;
+        border-radius: $base-border-radius;
+        color: map-get($map:$btn-hover-colors, $key: $key);
+
+      }
+  
+      .btn-outline-#{$key} {
+        background-color: #fff;
+        text-decoration: none;
+        color: $value;
+        cursor: pointer;
+        display: inline-block;
+        border: $base-border-thickness solid $value;
+        padding: $base-padding $base-padding * 2;
+        border-radius: $base-border-radius;
+  
+        &:hover {
+          color: map-get($map: $btn-hover-colors, $key: $key);
+          background-color: $value;
+        }
+
+        
+      }
+    }
+    //   @debug "<button class='btn-#{$key}'>Button</button>";
+  
+    //   @debug "<button class='btn-outline-#{$key}'>#{$key}</button>";
+  }
